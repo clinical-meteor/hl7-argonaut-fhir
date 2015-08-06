@@ -28,3 +28,5 @@ meteor add clinical:fhir
 [Example Patient Data](http://hl7-fhir.github.io/overview-dev.html)  
 
 [Node On FHIR](https://github.com/medcafe/NodeOnFHIR)  
+
+[Implementation-Sprint-1](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-1)  
