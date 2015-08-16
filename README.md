@@ -30,3 +30,7 @@ meteor add clinical:fhir
 [Node On FHIR](https://github.com/medcafe/NodeOnFHIR)  
 
 [Implementation-Sprint-1](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-1)  
+
+[Possible API inspired by mqtt-collection](https://atmospherejs.com/perak/mqtt-collection)  
+
+
