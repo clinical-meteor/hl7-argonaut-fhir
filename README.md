@@ -5,14 +5,13 @@ HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces 
 #### Installation  
 
 ````bash
+# install the hl7-fhir package
+meteor add clinical:hl7-fhir
+
 # install the reference app
 git clone http://github.com/awatson1978/hl7-argonaut-fhir
 cd hl7-argonaut-fhir/webapp
 meteor
-
-
-# install the hl7-fhir package
-meteor add clinical:hl7-fhir
 ````
 
 

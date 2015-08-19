@@ -11,11 +11,14 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
+  api.use('meteor-platform');
   api.use('nimble:restivus@0.8.4');
 
   api.versionsFrom('1.1.0.3');
 
-  //api.addFiles('mongo.js');
+  //api.addFiles('lib/mongo.js');
+  api.addFiles('server/initialize.js');
+  api.addFiles('lib/restivus.js');
 });
 
 Package.onTest(function (api) {
