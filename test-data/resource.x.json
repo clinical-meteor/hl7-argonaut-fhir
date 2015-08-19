@@ -1,0 +1,19 @@
+{
+  "resourceType" : "X",
+  "id" : "12",
+  "meta" : {
+    "versionId" : "12",
+    "lastUpdated" : "2014-08-18T01:43:30Z",
+    "profile" : ["http://example-consortium.org/fhir/profile/patient"],
+    "security" : [{
+      "system" : "http://hl7.org/fhir/v3/ActCode",
+      "code" : "EMP"
+    }],
+    "tag" : [{
+      "system" : "http://example.com/codes/workflow",
+      "code" : "needs-review"
+    }]
+  },
+  "implicitRules" : "http://example-consortium.org/fhir/ehr-plugins",
+  "language" : "X"
+}
