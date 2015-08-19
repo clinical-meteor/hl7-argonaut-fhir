@@ -1,0 +1,2398 @@
+list={
+  "title" : "History for Practitioner",
+  "id" : "urn:uuid:be8e40ed-f771-4c38-98c5-4665cae644",
+  "totalResults" : "0",
+  "link" : [
+    {
+      "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/history?_prior=2013-08-13T15:31:46Z&_offset=20&_count=20",
+      "rel" : "next"
+    },
+    {
+      "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/history?_prior=2013-08-13T15:31:46Z&_offset=0&_count=20",
+      "rel" : "self"
+    },
+    {
+      "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/history?_prior=2013-08-13T15:31:46Z&_offset=0&_count=20",
+      "rel" : "first"
+    }
+  ],
+  "updated" : "2013-08-13T15:31:46Z",
+  "entry" : [
+    {
+      "title" : "Practitioner \"70\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@70",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@70/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Enter Ellen, ElleSSN:&#x0A;            333777777</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "333777777"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Enter"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Ellen"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1020"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1058 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Enter Ellen, ElleSSN:&#x0A;            333777777</div>"
+    },
+    {
+      "title" : "Practitioner \"69\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@69",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@69/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Stretcher, Seth. SSN:&#x0A;            222778888</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222778888"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Stretcher"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Seth"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1060"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1058 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Stretcher, Seth. SSN:&#x0A;            222778888</div>"
+    },
+    {
+      "title" : "Practitioner \"68\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@68",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@68/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Player, Pamela. SSN:&#x0A;            222776666</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222776666"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Player"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Pamela"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1059"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1057 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Player, Pamela. SSN:&#x0A;            222776666</div>"
+    },
+    {
+      "title" : "Practitioner \"67\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@67",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@67/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">teHelper. SSN: 000111111</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "000111111"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Helper"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Helen"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1019"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1019 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">teHelper. SSN: 000111111</div>"
+    },
+    {
+      "title" : "Practitioner \"66\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@66",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@66/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Chow, Connie. SSN:&#x0A;            333555555</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "333555555"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Chow"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Connie"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1018"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1018 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Chow, Connie. SSN:&#x0A;            333555555</div>"
+    },
+    {
+      "title" : "Practitioner \"65\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@65",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@65/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Beaker, Bill. SSN:&#x0A;            333444444</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "333444444"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Beaker"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Bill"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1017"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1017 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Beaker, Bill. SSN:&#x0A;            333444444</div>"
+    },
+    {
+      "title" : "Practitioner \"64\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@64",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@64/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Listener, Larry. SSN:&#x0A;            222773333</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222773333"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Listener"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Larry"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1058"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1056 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Listener, Larry. SSN:&#x0A;            222773333</div>"
+    },
+    {
+      "title" : "Practitioner \"63\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@63",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@63/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Bunion, Paul. SSN:&#x0A;            222772222</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222772222"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Bunion"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Paul"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1057"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1055 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Bunion, Paul. SSN:&#x0A;            222772222</div>"
+    },
+    {
+      "title" : "Practitioner \"62\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@62",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@62/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Script, Susan. SSN:&#x0A;            333222222</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "333222222"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Script"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Susan"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1016"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1016 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Script, Susan. SSN:&#x0A;            333222222</div>"
+    },
+    {
+      "title" : "Practitioner \"61\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@61",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@61/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Specs, Sylvia. SSN:&#x0A;            222669999</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222669999"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Specs"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Sylvia"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1056"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1054 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Specs, Sylvia. SSN:&#x0A;            222669999</div>"
+    },
+    {
+      "title" : "Practitioner \"60\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@60",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@60/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:33Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Brace, Ben. SSN:&#x0A;            222668888</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222668888"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Brace"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Ben"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1055"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1053 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Brace, Ben. SSN:&#x0A;            222668888</div>"
+    },
+    {
+      "title" : "Practitioner \"59\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@59",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@59/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Chopper, Charlie. SSN:&#x0A;            222667777</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222667777"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Chopper"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Charlie"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1054"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1052 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Chopper, Charlie. SSN:&#x0A;            222667777</div>"
+    },
+    {
+      "title" : "Practitioner \"58\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@58",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@58/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Bender, Bob. SSN:&#x0A;            222666666</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222666666"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Bender"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Bob"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1053"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1051 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Bender, Bob. SSN:&#x0A;            222666666</div>"
+    },
+    {
+      "title" : "Practitioner \"57\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@57",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@57/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Barton, Clarence. SSN:&#x0A;            222999999</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222999999"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Barton"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Clarence"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1015"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1015 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Barton, Clarence. SSN:&#x0A;            222999999</div>"
+    },
+    {
+      "title" : "Practitioner \"56\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@56",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@56/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Nightingale, Nancy. SSN:&#x0A;            222888888</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222888888"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Nightingale"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Nancy"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1014"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1014 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Nightingale, Nancy. SSN:&#x0A;            222888888</div>"
+    },
+    {
+      "title" : "Practitioner \"55\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@55",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@55/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Helper, Horace. SSN:&#x0A;            222665555</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222665555"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Helper"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Horace"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1052"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1050 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Helper, Horace. SSN:&#x0A;            222665555</div>"
+    },
+    {
+      "title" : "Practitioner \"54\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@54",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@54/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Plumber, Peter. SSN:&#x0A;            222664444</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222664444"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Plumber"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Peter"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1051"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1049 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Plumber, Peter. SSN:&#x0A;            222664444</div>"
+    },
+    {
+      "title" : "Practitioner \"53\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@53",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@53/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Cutter, Carl. SSN:&#x0A;            222777777</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222777777"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Cutter"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Carl"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1013"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1013 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Cutter, Carl. SSN:&#x0A;            222777777</div>"
+    },
+    {
+      "title" : "Practitioner \"52\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@52",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@52/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Joint, Jeffrey. SSN:&#x0A;            222663333</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222663333"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Joint"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Jeffrey"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1050"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1048 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Joint, Jeffrey. SSN:&#x0A;            222663333</div>"
+    },
+    {
+      "title" : "Practitioner \"51\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@51",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@51/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Curie, Christine. SSN:&#x0A;            222555555</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222555555"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Curie"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Christine"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1011"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1011 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Langeveld, A. SSN:&#x0A;            222555555</div>"
+    },
+    {
+      "title" : "Practitioner \"f005\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f005",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f005/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Curie, Christine. SSN:&#x0A;            222555555</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222555556"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Langeveld"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "A"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1012"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1011 Elm Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Langeveld, A. SSN:&#x0A;            222555555</div>"
+    },
+    {
+      "title" : "Practitioner \"f201\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f201",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f201/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Curie, Madame. SSN:&#x0A;            222555557</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222555557"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Curie"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Madame"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-1022"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1011 Oak Blvd"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "F"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Curie, Madame. SSN:&#x0A;            222555557</div>"
+    },
+    {
+      "title" : "Practitioner \"f202\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f202",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f202/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Sprat, Jack. SSN:&#x0A;            222555558</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222555558"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Sprat"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Jack"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-2011"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "1018 Healthcare Drive, Suite 18"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "M"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Sprat, Jack. SSN:&#x0A;            222555558</div>"
+    },
+    {
+      "title" : "Practitioner \"f202\" Version \"1\"",
+      "id" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f202",
+      "link" : [
+        {
+          "href" : "http://hl7connect.healthintersections.com.au/svc/fhir/practitioner/@f202/history/@1",
+          "rel" : "self"
+        }
+      ],
+      "updated" : "2013-08-09T10:47:32Z",
+      "published" : "2013-08-13T15:31:46Z",
+      "author" : [
+        {
+          "name" : "110.143.187.242"
+        }
+      ],
+      "content" : {
+        "Practitioner" : {
+          "text" : {
+            "status" : {
+              "value" : "generated"
+            },
+            "div" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Maas, Luigi. SSN:&#x0A;            222555559</div>"
+          },
+          "identifier" : [
+            {
+              "label" : {
+                "value" : "SSN"
+              },
+              "system" : {
+                "value" : "http://hl7.org/fhir/sid/us-ssn"
+              },
+              "key" : {
+                "value" : "222555559"
+              }
+            }
+          ],
+          "name" : {
+            "use" : {
+              "value" : "official"
+            },
+            "family" : [
+              {
+                "value" : "Maas"
+              }
+            ],
+            "given" : [
+              {
+                "value" : "Luigi"
+              }
+            ]
+          },
+          "telecom" : [
+            {
+              "system" : {
+                "value" : "phone"
+              },
+              "value" : {
+                "value" : "555-555-3011"
+              },
+              "use" : {
+                "value" : "work"
+              }
+            }
+          ],
+          "address" : {
+            "use" : {
+              "value" : "home"
+            },
+            "line" : [
+              {
+                "value" : "2011 Healthcare Drive"
+              }
+            ]
+          },
+          "gender" : {
+            "coding" : [
+              {
+                "system" : {
+                  "value" : "http://hl7.org/fhir/v3/AdministrativeGender"
+                },
+                "code" : {
+                  "value" : "m"
+                }
+              }
+            ]
+          },
+          "organization" : {
+            "type" : {
+              "value" : "Organization"
+            },
+            "reference" : {
+              "value" : "organization/@hl7"
+            }
+          }
+        }
+      },
+      "summary" : "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<div xmlns=\"http://www.w3.org/1999/xhtml\">Maas, Luigi. SSN:&#x0A;            222555559</div>"
+    }
+  ]
+}
