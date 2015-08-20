@@ -1,5 +1,5 @@
 Meteor.startup(function(){
-  if(Items.find().count() === 0){
+  if(Patients.find().count() === 0){
     var item = {
       "resourceType": "Patient",
       "id" : "23434",
@@ -44,6 +44,6 @@ Meteor.startup(function(){
       "birthDate": "1932-09-24",
       "active": true
     };
-    Items.insert(item);
-  }  
+    Patients.insert(item);
+  }
 })

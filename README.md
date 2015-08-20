@@ -12,11 +12,14 @@ meteor add clinical:hl7-fhir
 git clone http://github.com/awatson1978/hl7-argonaut-fhir
 cd hl7-argonaut-fhir/webapp
 meteor
+
+# run the reference app with local package development
+METEOR_OFFLINE_CATALOG=true PACKAGE_DIRS="../packages" meteor
 ````
 
 
 ==============================
-#### Additional Resources
+#### Argonaut Resources
 
 [HL7 FHIR Argonaut Homepage](http://argonautwiki.hl7.org/index.php?title=Main_Page)  
 [Argonaut Project Implementation Program](http://www.hl7.org/documentcenter/public_temp_5CA28742-1C23-BA17-0CDCC42B408067A3/wg/argonaut/Argonaut%20Implementation%20Program%20Kickoff-24%20Feb%202015-v3.pdf)  
@@ -30,7 +33,7 @@ meteor
 [Implementation-Sprint-1](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-1)  
 
 ==============================
-#### Additional Resources
+#### Additional Node/Meteor Resources
 
 [Node On FHIR](https://github.com/medcafe/NodeOnFHIR)  
 [Possible API inspired by mqtt-collection](https://atmospherejs.com/perak/mqtt-collection)  
