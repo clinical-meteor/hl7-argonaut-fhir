@@ -1,5 +1,6 @@
 # hl7-argonaut-fhir
-HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces for HL7).
+HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces for HL7).    
+[http://hl7-argonaut-fhir.meteor.com](http://hl7-argonaut-fhir.meteor.com)  
 
 ==============================
 #### Installation  
