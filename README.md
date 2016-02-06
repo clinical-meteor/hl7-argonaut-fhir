@@ -19,6 +19,8 @@ METEOR_OFFLINE_CATALOG=true PACKAGE_DIRS="../packages" meteor
 ````
 
 
+
+
 ==============================
 #### Argonaut Links
 
@@ -28,6 +30,15 @@ METEOR_OFFLINE_CATALOG=true PACKAGE_DIRS="../packages" meteor
 [Argonaut Project Spreadsheet](https://docs.google.com/spreadsheets/d/1mJRn7jHeED5SN-ZRhOh3V61wXmIKfaskQUF9nbUSkvY/edit)  
 [Example Patient Data](http://hl7-fhir.github.io/overview-dev.html)  
 [oauth2orize](https://www.npmjs.com/package/oauth2orize)
+
+==============================
+#### Implementation Progress
+
+[projectcrucible.org/dashboards/argonaut](http://projectcrucible.org/dashboards/argonaut)  
+[http://www.hl7.org/fhir/2016Jan/testscript.html](http://www.hl7.org/fhir/2016Jan/testscript.html)  
+[http://touchstone.aegis.net/toushstone/testdefinitions](http://touchstone.aegis.net/toushstone/testdefinitions)  
+[https://github.com/argonautproject/implementation-program/wiki](https://github.com/argonautproject/implementation-program/wiki)  
+
 
 
 ==============================
