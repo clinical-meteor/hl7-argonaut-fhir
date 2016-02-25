@@ -34,9 +34,10 @@ METEOR_OFFLINE_CATALOG=true PACKAGE_DIRS="../packages" meteor
 ==============================
 #### Implementation Progress
 
-[projectcrucible.org/dashboards/argonaut](http://projectcrucible.org/dashboards/argonaut)  
+[http://projectcrucible.org/dashboards/argonaut](http://projectcrucible.org/dashboards/argonaut)  
 [http://www.hl7.org/fhir/2016Jan/testscript.html](http://www.hl7.org/fhir/2016Jan/testscript.html)  
-[http://touchstone.aegis.net/toushstone/testdefinitions](http://touchstone.aegis.net/toushstone/testdefinitions)  
+[https://touchstone.aegis.net/touchstone/](https://touchstone.aegis.net/touchstone/)  
+[https://touchstone.aegis.net/touchstone/testdefinitions](https://touchstone.aegis.net/touchstone/testdefinitions)  
 [https://github.com/argonautproject/implementation-program/wiki](https://github.com/argonautproject/implementation-program/wiki)  
 
 
