@@ -2,6 +2,8 @@
 HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces for HL7).    
 [http://hl7-argonaut-fhir.meteor.com](http://hl7-argonaut-fhir.meteor.com)  
 
+**UPDATE:  We now have an HL7 FHIR Server!**  
+
 ==============================
 #### Installation  
 
@@ -41,7 +43,6 @@ METEOR_OFFLINE_CATALOG=true PACKAGE_DIRS="../packages" meteor
 [https://github.com/argonautproject/implementation-program/wiki](https://github.com/argonautproject/implementation-program/wiki)  
 
 
-
 ==============================
 #### HL7 FHIR Resources  
 
@@ -53,46 +54,59 @@ That being said, the HL7 FHIR project provides JSON schemas for the Argonaut res
 
 Of the two dozen resources that we're starting with, the following are the most mature and have the highest priority.  Start here first.   
 
-```sh
-ClinicalImpression
-DiagnosticOrder
-Patient
-Specimen
-Questionnaire
-QuestionnaireResponse
+
+[ClinicalImpression](https://github.com/clinical-meteor/hl7-resource-clinical-impression)
+[DiagnosticOrder](https://github.com/clinical-meteor/hl7-resource-diagnostic-order)
+[MedicationOrder](https://github.com/clinical-meteor/hl7-resource-medication-order)  
+[Patient](https://github.com/clinical-meteor/hl7-resource-patient)
+[Specimen](https://github.com/clinical-meteor/hl7-resource-specimen)
+[Questionnaire](https://github.com/clinical-meteor/hl7-resource-questionnaire)
+[QuestionnaireResponse](https://github.com/clinical-meteor/hl7-resource-questionnaire-response)
 Sequence
-```
 
-#### Contributing FHIR Resources
+==============================
+#### FHIR Oauth2 Server
 
-Generally speaking, the HL7 FHIR Resource objects are well defined by a standards committee, and fairly straightforward.  As such, we'll take most any pull requests that include SimpleSchemas that conform to any FHIR Resource or Extension.  
+##### Step 1  Get yourself an OAuth2 Server
 
-#### Steps to Convert FHIR JSON to SimpleSchema
+[prime-8-consulting/meteor-oauth2](https://github.com/prime-8-consulting/meteor-oauth2)  
 
-If you'd like to work on converting FHIR Resources to SimpleSchemas and Meteor packages, here is a short outline of the steps used to create the initial collection of schemas.
+````
+cd examples/resourceServer
+meteor --port 3100
 
-0. Copy JSON to file
-1. Remove comments
-2. Convert "<boolean>" to Boolean
-3. Convert subdocuments fields into dotted notation
-4. Remove indentation spacing
-5. Add {type: {}} structure to each entry
-6. Add optional:true
-7. Add {meta: {version: ""}}
-8. SimpleSchema()
-9. JSDoc definition
-10. lib/object.js file
-11. base object
-12. transform function
-13. collection definition
-14. package.js file
+cd examples/clientApplication
+meteor --port 3200
+````
 
+##### Step 2: Install a FHIR Resource
+
+[prime-8-consulting/meteor-oauth2](https://github.com/prime-8-consulting/meteor-oauth2)  
+
+````
+cd examples/resourceServer
+meteor add clinical:hl7-resource-diagnostic-order
+````
+
+##### Step 3:  Configure the Resource Server
+
+##### Step 4:  Authenticate
+
+##### Step 5:  Use Postman to access a Diagnostic Resource
+
+
+
+
+==============================
+#### FHIR Server Documentation  
+
+![FHIR Server Documentation](https://raw.githubusercontent.com/prime-8-consulting/meteor-oauth2/master/documentation/OAuthWebSequenceWithConfig.png)
 
 ==============================
 #### Implementation Sprints  
 
 [Implementation Sprint 1](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-1)  
-[Implementation Sprint 2](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-2)
+[Implementation Sprint 2](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-2)  
 [Implementation Sprint 3](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-3)
 
 ==============================
