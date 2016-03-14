@@ -48,21 +48,17 @@ METEOR_OFFLINE_CATALOG=true PACKAGE_DIRS="../packages" meteor
 
 The ``hl7-argonaut-fhir`` package now comes with schemas for two dozen resources from the [HL7 FHIR Resource Index](https://www.hl7.org/fhir/resourcelist.html).  
 
-**Note: It cannot be stressed enough how preliminary these schemas are.  They are extremely experimental.**    
-
-That being said, the HL7 FHIR project provides JSON schemas for the Argonaut resources, and it's a fairly straightforward matter to convert them to SimpleSchemas for Meteor.  The biggest issue is that they are complex schemas, specifying objects which don't yet exist in the Meteor ecosystem.  So, it's very likely that you might try to use one of the schemas, only to find that it throws errors because it doesn't have a definition for one of the objects specified in the schema.  Be warned.  
-
 Of the two dozen resources that we're starting with, the following are the most mature and have the highest priority.  Start here first.   
 
 
-[ClinicalImpression](https://github.com/clinical-meteor/hl7-resource-clinical-impression)
-[DiagnosticOrder](https://github.com/clinical-meteor/hl7-resource-diagnostic-order)
-[MedicationOrder](https://github.com/clinical-meteor/hl7-resource-medication-order)  
-[Patient](https://github.com/clinical-meteor/hl7-resource-patient)
-[Specimen](https://github.com/clinical-meteor/hl7-resource-specimen)
-[Questionnaire](https://github.com/clinical-meteor/hl7-resource-questionnaire)
-[QuestionnaireResponse](https://github.com/clinical-meteor/hl7-resource-questionnaire-response)
-Sequence
+[ClinicalImpression](https://github.com/clinical-meteor/hl7-resource-clinical-impression)  
+[DiagnosticOrder](https://github.com/clinical-meteor/hl7-resource-diagnostic-order)  
+[MedicationOrder](https://github.com/clinical-meteor/hl7-resource-medication-order)    
+[Patient](https://github.com/clinical-meteor/hl7-resource-patient)  
+[Specimen](https://github.com/clinical-meteor/hl7-resource-specimen)  
+[Questionnaire](https://github.com/clinical-meteor/hl7-resource-questionnaire)  
+[QuestionnaireResponse](https://github.com/clinical-meteor/hl7-resource-questionnaire-response)  
+Sequence  
 
 ==============================
 #### FHIR Oauth2 Server
