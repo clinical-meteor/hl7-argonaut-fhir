@@ -31,5 +31,12 @@ Meteor.methods({
      */
     'deleteAllClients': function() {
         oAuth2Server.collections.client.remove({});
+    },
+
+    /**
+     * Allows user to delete their account
+     */
+    'deleteAllClients': function(accountId) {
+        oAuth2Server.collections.client.remove({_id: accountId});
     }
 });

@@ -2,7 +2,7 @@ var OAuth = Package.oauth.OAuth;
 var Random = Package.random.Random;
 
 OAuth.registerService(MeteorOAuth2.serviceName, 2, null, function(query) {
-    console.log('query', query);
+    console.log('OAuth query', query);
     var config = ServiceConfiguration.configurations.findOne({
         service: MeteorOAuth2.serviceName
     });

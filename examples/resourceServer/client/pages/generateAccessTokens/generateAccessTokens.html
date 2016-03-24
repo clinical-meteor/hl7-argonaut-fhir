@@ -1,0 +1,81 @@
+<template name="generateAccessTokens">
+  <div id="generateAccessTokens" class="padded page">
+    <h2>Allow Access To</h2>
+    <p>This is the button a user would click to allow {{ urlParams.client_id }} access to your email address.. etc.</p>
+    <button class="authorizePatientsAccessTokens btn-primary btn-main btn-large" style="{{getButtonColor}}">Patients</button>
+
+                    {{#if grantResult}}
+                        <h3>Step A5.2 - Return Access Tokens</h3>
+                        <p>Grant was run with the given params. Normally, the user would be redirected to the redirect URI.</p>
+                        <table border="1" cellpadding="5" cellspacing="0">
+                            <tr>
+                                <td>Success</td>
+                                <td>{{ grantResult.success }}</td>
+                            </tr>
+                            <tr>
+                                <td>Error</td>
+                                <td>{{ grantResult.error }}</td>
+                            </tr>
+                            <tr>
+                                <td>Authorization Code</td>
+                                <td>{{ grantResult.authorizationCode }}</td>
+                            </tr>
+                            <tr>
+                                <td>RedirectUri</td>
+                                <td><a href="{{ grantResult.redirectToUri}}">{{ grantResult.redirectToUri}}</a></td>
+                            </tr>
+                        </table>
+
+
+                        <p>This is where the user's interaction generally stops. For testing purposes, now that you have an authorization code, you can test service by retrieving an access token.</p>
+                        <button class="testLocalTokens">Test Local Tokens</button>
+
+                        {{#if tokenResult}}
+                            <hr />
+                            <h3>Step A6 - Save Refresh Token</h3>
+                            <p>
+                                Using the authorizationCode, the client applicationg would post back to this server
+                                to request a token. This is the token you'd use to run REST calls and alike.
+                                This is server to server communication. This example is only for testing purposes to
+                                ensure we did everything properly.
+                            </p>
+                            <table border="1" cellpadding="5" cellspacing="0">
+                                <tr>
+                                    <td>access_token</td>
+                                    <td>{{ tokenResult.access_token }}</td>
+                                </tr>
+                                <tr>
+                                    <td>expires_in</td>
+                                    <td>{{ tokenResult.expires_in }}</td>
+                                </tr>
+                                <tr>
+                                    <td>token_type</td>
+                                    <td>{{ tokenResult.token_type }}</td>
+                                </tr>
+                            </table>
+
+                            <hr />
+                            <h3>Step A7 - fetch userId from /api/getUserId</h3>
+                            <p>
+                                This step is also performed server-to-server by the client application and is
+                                only done here for testing purposes. Here we are using the newly acquired
+                                access token, we retrieve the userId associated with the access token.
+                            </p>
+                            <table border="1" cellpadding="5" cellspacing="0">
+                                <tr>
+                                    <td>expected id</td>
+                                    <td>{{ currentUser._id }}</td>
+                                    <td>This was given to us by Meteor.</td>
+                                </tr>
+                                <tr>
+                                    <td>actual id</td>
+                                    <td>{{ getUserIdResult }}</td>
+                                    <td>This was retrieved via REST using the access token.</td>
+                                </tr>
+                            </table>
+                        {{/if}}
+                    {{/if}}
+
+
+  </div>
+</template>

@@ -11,3 +11,12 @@ insecure
 clinical:hl7-fhir@0.0.5
 less
 awatson1978:fonts-helveticas
+
+clinical:layout
+clinical:layout-reset
+clinical:theming
+clinical:theming-ui
+clinical:fonts
+clinical:error-pages
+clinical:active-entry
+clinical:glass-ui

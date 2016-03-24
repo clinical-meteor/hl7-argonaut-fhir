@@ -1,0 +1,33 @@
+<template name="sidebar">
+  <section id="sidebar" class="sidebarMenu">
+
+    <div id="sidebarMenuContents" class="sidebarMenuContents">
+
+        <div id="usernameLink" class="sidebarMenuItem">{{getUsername}}</div>
+        {{#if currentUser}}
+          <a id="myProfileLink" href="/myprofile">My Profile</a>
+          <a id="themingLink" class="sidebarMenuItem withLowerBorder">Theming</a>
+        {{/if}}
+
+        <a id="homePage" href="/">Meteor FHIR Server Introduction</a>
+        {{#if currentUser}}
+          <a id="usersLink" href="/list/users" class="withLowerBorder" >User Directory</a>
+          <a id="usersLink" href="/list/patients" class="withLowerBorder" >Patient Directory</a>
+          <a id="newOauthClientLink" href="/newOuathClient" class="sidebarMenuItem">API Key Registration</a>
+          <a id="oauthAdminLink" href="/oauthAdmin" class="sidebarMenuItem">OAuth Admin</a>
+        {{/if}}
+
+
+
+
+        {{#if currentUser}}
+          <a id="logoutButton" class="withLowerBorder">Logout</a>
+        {{/if}}
+        <div id="connectionStatusPanel" class="centered">
+          {{getConnectionStatus}}
+        </div>
+
+
+    </div>
+  </section>
+</template>

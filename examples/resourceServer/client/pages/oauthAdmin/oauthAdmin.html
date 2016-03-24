@@ -1,0 +1,51 @@
+<template name="oauthAdmin">
+  <div id="oauthAdmin" class="padded page">
+    <!-- <h2>Administrative Data</h2> -->
+    <div class="section">
+        <hr />
+
+        <h3>Existing clients.</h3>
+        <p>This shows a list of all the existing clients.</p>
+        <ul>
+          {{#each clientList}}
+            <li>{{> clientItem }}</li>
+          {{/each}}
+        </ul>
+
+
+        <br>
+        <button type="button" class="deleteAllClients btn-primary btn-main btn-medium" style="{{getButtonColor}}">Delete All</button>
+        <br><br>
+
+        <hr />
+        
+        <h3>Existing auth codes.</h3>
+        <p>This shows a list of all the existing auth codes.</p>
+        <ul>
+          {{#each authCodes}}
+            <li>{{> authCodeItem }}</li>
+          {{/each}}
+        </ul>
+
+
+        <hr />
+        <h3>Existing refresh tokens</h3>
+        <p>This shows a list of all the existing refresh tokens.</p>
+        <ul>
+          {{#each refreshTokens}}
+            <li>{{> refreshTokenItem }}</li>
+          {{/each}}
+        </ul>
+    </div>
+  </div>
+</template>
+
+
+<template name="clientItem">
+  <div class="clientItem">
+    {{active}}
+    {{clientName}}
+    {{clientId}}
+    {{redirectUri}}
+  </div>
+</template>

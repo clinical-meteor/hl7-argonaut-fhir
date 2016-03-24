@@ -4,6 +4,9 @@ oAuth2Server.subscribeTo = {
     },
     refreshTokens: function() {
         return Meteor.subscribe(oAuth2Server.pubSubNames.refreshTokens);
+    },
+    oauthClients: function() {
+        return Meteor.subscribe(oAuth2Server.pubSubNames.oauthClients);
     }
 };
 
@@ -29,4 +32,3 @@ oAuth2Server.callMethod = {
         );
     }
 };
-

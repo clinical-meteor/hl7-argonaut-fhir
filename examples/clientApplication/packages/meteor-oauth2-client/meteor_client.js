@@ -62,6 +62,6 @@ MeteorOAuth2.requestCredential = function (options, credentialRequestCompleteCal
         loginUrl: loginUrl,
         credentialRequestCompleteCallback: credentialRequestCompleteCallback,
         credentialToken: credentialToken,
-        popupOptions: { height: 600 }
+        popupOptions: { height: 600, width: 480 }
     });
 };
