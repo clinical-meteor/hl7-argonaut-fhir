@@ -4,8 +4,8 @@
 // });
 
 Router.route('/', {
-  name: 'homePage',
-  template: 'authorizePage'
+  name: 'fhirWelcomePage',
+  template: 'fhirWelcomePage'
 });
 
 

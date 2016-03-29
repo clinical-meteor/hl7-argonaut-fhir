@@ -9,6 +9,7 @@ meteor-platform
 insecure
 jquery
 less
+random
 
 accounts-base
 accounts-password

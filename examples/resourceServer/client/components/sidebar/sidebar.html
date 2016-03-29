@@ -9,12 +9,14 @@
           <a id="themingLink" class="sidebarMenuItem withLowerBorder">Theming</a>
         {{/if}}
 
-        <a id="homePage" href="/">Meteor FHIR Server Introduction</a>
+        <!-- <a id="homePage" href="/">Meteor FHIR Server Introduction</a> -->
         {{#if currentUser}}
-          <a id="usersLink" href="/list/users" class="withLowerBorder" >User Directory</a>
+          <a id="newOauthClientLink" href="/registerOuathClient" class="sidebarMenuItem withLowerBorder">Register Application</a>
+          <a id="usersLink" href="/list/users" >User Directory</a>
           <a id="usersLink" href="/list/patients" class="withLowerBorder" >Patient Directory</a>
-          <a id="newOauthClientLink" href="/newOuathClient" class="sidebarMenuItem">API Key Registration</a>
-          <a id="oauthAdminLink" href="/oauthAdmin" class="sidebarMenuItem">OAuth Admin</a>
+          {{#if isSysadmin}}
+            <a id="oauthAdminLink" href="/oauthAdmin" class="sidebarMenuItem">OAuth Admin</a>
+          {{/if}}
         {{/if}}
 
 

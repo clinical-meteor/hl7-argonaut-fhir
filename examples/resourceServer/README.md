@@ -13,7 +13,11 @@ to create authorization codes and use access tokens in a rest service.
 Starting:
 
 ``` sh
+#run the app
 meteor --port 3100
+
+# initialize users
+INITIALIZE=true ADDITIONAL=true Patients=true meteor
 ```
 After it is started, goto http://localhost:3100 and walk through the steps.
 

@@ -36,3 +36,46 @@ JsonRoutes.add('get', '/api/getUserId', function(req, res, next) {
         data: accessToken.userId
     });
 });
+
+
+
+
+
+// JsonRoutes.add("get", "/api/getUserData/:id", function (req, res, next) {
+//   console.log('GET /getUserData/' + req.params.id);
+//   //console.log('res', res);
+//
+//   var id = req.params.id;
+//   console.log('Patients.findOne(id)', Patients.findOne(id));
+//
+//   JsonRoutes.sendResult(res, {
+//     code: 200,
+//     data: Meteor.users.findOne(id)
+//   });
+// });
+
+
+JsonRoutes.add("get", "/api/getUserData/:id", function (req, res, next) {
+  console.log('GET /fhir/Patient/' + req.params.id);
+  //console.log('res', res);
+
+  var accessTokenStr = (req.params && req.params.access_token) || (req.query && req.query.access_token);
+  var accessToken = oAuth2Server.collections.accessToken.findOne({accessToken: accessTokenStr});
+
+  if (accessToken || process.env.NOAUTH) {
+    console.log('accessToken', accessToken);
+    console.log('accessToken.userId', accessToken.userId);
+
+    var id = req.params.id;
+    console.log('Meteor.users.findOne(id)', Meteor.users.findOne(id));
+
+    JsonRoutes.sendResult(res, {
+      code: 200,
+      data: Meteor.users.findOne(id)
+    });
+  } else {
+    JsonRoutes.sendResult(res, {
+      code: 401
+    });
+  }
+});

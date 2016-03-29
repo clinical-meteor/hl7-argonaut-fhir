@@ -1,1 +1,15 @@
+.DS_Store
 .idea
+
+.meteor/local
+.meteor-electron
+.gagarin
+
+screenshots
+screenshots/*
+logs
+logs/*
+reports
+reports/*
+
+settings.json

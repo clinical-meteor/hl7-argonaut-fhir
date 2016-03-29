@@ -18,6 +18,21 @@ Meteor.methods({
         );
     },
 
+
+    'changeSecret': function (client, newSecret){
+        console.log('changeSecret', client);
+        oAuth2Server.collections.client.upsert(
+            {
+                clientId: client.clientId
+            },
+            {
+                $set: {
+                  'clientSecret': newSecret
+                }
+            }
+        );
+    },
+
     /**
      * Exists purely for testing purposes.
      * @returns {any}
@@ -36,7 +51,7 @@ Meteor.methods({
     /**
      * Allows user to delete their account
      */
-    'deleteAllClients': function(accountId) {
+    'deleteClient': function(accountId) {
         oAuth2Server.collections.client.remove({_id: accountId});
     }
 });

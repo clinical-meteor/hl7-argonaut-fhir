@@ -100,15 +100,21 @@ Meteor.publish(oAuth2Server.pubSubNames.refreshTokens, function () {
   });
 });
 Meteor.publish(oAuth2Server.pubSubNames.clientsCollection, function () {
-  // if (!this.userId) {
-  //   return this.ready();
-  // }
+  // if the user isn't logged in, don't return any clients
+  if (!this.userId) {
+    return this.ready();
+  }
+  // if the user is a sysadmin, return all the clients
+  if (Roles.userIsInRole(this.userId, ['sysadmin'])) {
+    return oAuth2Server.collections.clientsCollection.find();
+  } else {
+    // otherwise, onlly return a user's own clients
+    return oAuth2Server.collections.clientsCollection.find({
+      'owner.reference': this.userId
+    });
+  }
 
-  return oAuth2Server.collections.clientsCollection.find({
-    active: true,
-  }, {fields: {
-    clientSecret: false
-  }});
+
 });
 
 ////////////

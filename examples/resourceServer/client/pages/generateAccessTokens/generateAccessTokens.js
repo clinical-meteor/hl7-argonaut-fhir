@@ -23,10 +23,11 @@ Template.generateAccessTokens.events({
       urlParams.scope && urlParams.scope.split(' '),
       urlParams.state,
       function (err, result) {
-        console.log(err, result);
+        console.log('grantResult', result);
 
         // give the UI something to display.
-        Template.generateAccessTokens.grantResult.set(result);
+        //Template.generateAccessTokens.grantResult.set(result);
+        window.location.replace(result.redirectToUri);
       }
     );
   }

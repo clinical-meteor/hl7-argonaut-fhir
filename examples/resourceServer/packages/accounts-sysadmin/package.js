@@ -8,5 +8,11 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('1.1.0.3');
-  api.addFiles('accounts-sysadmin.js');
+
+  api.use('templating')
+  api.use('clinical:roles@2.4.4');
+
+  api.addFiles('client/helpers.js', 'client');
+  api.addFiles('server/initialize.js', 'server');
+
 });

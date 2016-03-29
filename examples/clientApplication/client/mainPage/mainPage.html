@@ -1,14 +1,7 @@
-<head>
-    <title>clientApplication</title>
-</head>
-
-<body>
-    <h1>Welcome to ClientApplication!</h1>
-    {{> main}}
-</body>
-
-<template name="main">
+<template name="mainPage">
+  <div id="mainPage" class="padded page">
     {{> loginButtons}}
+    <br><br>
 
     {{#if getUserAccessToken }}
         <hr />
@@ -21,30 +14,34 @@
             </p>
 
             <h2>Step A6</h2>
-            <p>accessToken: {{ getUserAccessToken }}</p>
+            <label for="">AccessToken</label><br>
+            <p>{{ getUserAccessToken }}</p>
 
-            <button class="testLocalTokens">Test Local Tokens</button>
+            <button class="testLocalTokens oauth-button">Test Local Tokens</button>
 
             {{#if getUserIdResult}}
                 <h3>Step A7 - fetch userId from /api/getUserId</h3>
-                <p>
+                <!-- <p>
                     This step is also performed server-to-server by the client application and is
                     only done here for testing purposes. Here we are using the newly acquired
                     access token, we retrieve the userId associated with the access token. These two
                     should match.
                 </p>
-                <table border="1" cellpadding="5" cellspacing="0">
-                    <tr>
-                        <td>expected id</td>
-                        <td>{{ getUserOAuth2Id }}</td>
-                        <td>This was given to us by the oauth2 service during login.</td>
-                    </tr>
-                    <tr>
-                        <td>actual id</td>
-                        <td>{{ getUserIdResult }}</td>
-                        <td>This was retrieved via REST using the access token.</td>
-                    </tr>
-                </table>
+
+                <label for="">expected id - given to us by the oauth2 service during login</label><br>
+                {{ getUserOAuth2Id }}<br><br> -->
+
+                <label for="">User ID</label><br>
+                {{ getUserIdResult }}
+
+
+                <h3>Step A8 - fetch data from /api/getUserData/:id</h3>
+                <p>
+                    This step uses the access token to query the patient record.
+                </p>
+                <textarea class="jsonData">
+                  {{getUserData}}
+                </textarea>
             {{/if}}
         </div>
     {{/if}}
@@ -56,6 +53,7 @@
             For the sake of convenience while you experiment, you can reset configuration for the ClientApplication.
             This will make the login button you see above goto it's unconfigured state.
         </p>
-        <button class="resetServiceConfiguration">Reset service configuration</button>
+        <button id="resetServiceConfiguration" class="oauth-button">Reset service configuration</button>
     </div>
+  </div>
 </template>
