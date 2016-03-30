@@ -16,8 +16,8 @@ HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces 
 ==============================
 #### Connect with the Community
 
-[Argonaut Project Google Group](https://groups.google.com/forum/#!forum/argonaut-project)  
-[http://community.fhir.org]( http://community.fhir.org)
+[groups.google.com/argonaut-project](https://groups.google.com/forum/#!forum/argonaut-project)  
+[http://community.fhir.org]( http://community.fhir.org)  
 [http:///chat.fhir.org](http:///chat.fhir.org)
 
 ==============================
