@@ -10,6 +10,7 @@ insecure
 jquery
 less
 random
+reactive-var
 
 accounts-base
 accounts-password
@@ -17,7 +18,8 @@ accounts-ui
 
 nemo64:bootstrap
 momentjs:moment
-reactive-var
+digilord:faker
+
 prime8consulting:meteor-oauth2-server
 simple:json-routes
 

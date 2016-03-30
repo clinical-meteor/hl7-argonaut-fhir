@@ -38,7 +38,14 @@ Meteor.methods({
      * @returns {any}
      */
     'clientCount': function() {
+      var user = Meteor.users.findOne({_id: this.userId});
+      if (user.username === "sysadmin") {
         return oAuth2Server.collections.client.find({}).count();
+      } else {
+        return oAuth2Server.collections.client.find({
+          'owner.reference': this.userId
+        }).count();
+      }
     },
 
     /**
@@ -53,5 +60,9 @@ Meteor.methods({
      */
     'deleteClient': function(accountId) {
         oAuth2Server.collections.client.remove({_id: accountId});
+    },
+
+    'getNewClientId': function(){
+      return (faker.company.bsAdjective() + "-" + faker.company.bsNoun()).trim();
     }
 });

@@ -1,0 +1,23 @@
+
+
+<template name="fhirWelcomePage">
+  <div id="fhirWelcomePage" class="padded page" style="{{getCardOpacity}}">
+    <h2>Welcome to the Meteor FHIR Server</h2>
+    <div class="section">
+      {{#if currentUser}}
+        <p>
+          Welcome!  Thanks for signing up.  The next step is to register your application.
+        </p>
+        <button id="register" class="btn-primary btn-main btn-large" style="{{getButtonColor}}">Register</button>
+      {{else}}
+        <p>
+            This server implements the OAuth2 protocol, and stores and returns data using Fast Healthealthcare Interoperability Resources, as defined by the HL7 Argonaut FHIR project.  To login to this FHIR Server using OAuth, you will need to first create an account and register an application.
+        </p>
+        <button id="createAnAccount" class="btn-primary btn-main btn-large" style="{{getButtonColor}}">Create an Account</button>
+      {{/if}}
+
+    </div>
+
+
+  </div>
+</template>
