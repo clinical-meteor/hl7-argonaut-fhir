@@ -10,11 +10,15 @@ HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces 
 
 [HL7 FHIR Argonaut Homepage](http://argonautwiki.hl7.org/index.php?title=Main_Page)  
 [Argonaut Project Implementation Program](http://www.hl7.org/documentcenter/public_temp_5CA28742-1C23-BA17-0CDCC42B408067A3/wg/argonaut/Argonaut%20Implementation%20Program%20Kickoff-24%20Feb%202015-v3.pdf)  
-[Argonaut Project Google Group](https://groups.google.com/forum/#!forum/argonaut-project)  
 [Argonaut Project Spreadsheet](https://docs.google.com/spreadsheets/d/1mJRn7jHeED5SN-ZRhOh3V61wXmIKfaskQUF9nbUSkvY/edit)  
 [Example Patient Data](http://hl7-fhir.github.io/overview-dev.html)  
 
+==============================
+#### Connect with the Community
 
+[Argonaut Project Google Group](https://groups.google.com/forum/#!forum/argonaut-project)  
+[http://community.fhir.org]( http://community.fhir.org)
+[http:///chat.fhir.org](http:///chat.fhir.org)
 
 ==============================
 #### FHIR Server Documentation  
@@ -97,3 +101,4 @@ meteor add clinical:hl7-resource-diagnostic-order
 
 [Node On FHIR](https://github.com/medcafe/NodeOnFHIR)  
 [Possible API inspired by mqtt-collection](https://atmospherejs.com/perak/mqtt-collection)  
+[Express Bearer Token](https://www.npmjs.com/package/express-bearer-token)
