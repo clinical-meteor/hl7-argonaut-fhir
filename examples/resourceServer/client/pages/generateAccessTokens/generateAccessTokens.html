@@ -7,24 +7,28 @@
                     {{#if grantResult}}
                         <h3>Step A5.2 - Return Access Tokens</h3>
                         <p>Grant was run with the given params. Normally, the user would be redirected to the redirect URI.</p>
-                        <table border="1" cellpadding="5" cellspacing="0">
-                            <tr>
-                                <td>Success</td>
-                                <td>{{ grantResult.success }}</td>
-                            </tr>
-                            <tr>
-                                <td>Error</td>
-                                <td>{{ grantResult.error }}</td>
-                            </tr>
-                            <tr>
-                                <td>Authorization Code</td>
-                                <td>{{ grantResult.authorizationCode }}</td>
-                            </tr>
-                            <tr>
-                                <td>RedirectUri</td>
-                                <td><a href="{{ grantResult.redirectToUri}}">{{ grantResult.redirectToUri}}</a></td>
-                            </tr>
-                        </table>
+
+                            <label for="">Success</label><br>
+                            <span>{{ grantResult.success }}</span>
+                            <br>
+                            <br>
+
+                            <label for="">Error</label><br>
+                            <span>{{ grantResult.error }}</span>
+                            <br>
+                            <br>
+
+                            <label for="">Authorization Code</label><br>
+                            <span>{{ grantResult.authorizationCode }}</span>
+                            <br>
+                            <br>
+                            
+                            <label for="">Redirect Uri</label><br>
+                            <span><a href="{{ grantResult.redirectToUri}}">{{ grantResult.redirectToUri}}</a></span>
+                            <br>
+                            <br>
+
+
 
 
                         <p>This is where the user's interaction generally stops. For testing purposes, now that you have an authorization code, you can test service by retrieving an access token.</p>
@@ -39,20 +43,20 @@
                                 This is server to server communication. This example is only for testing purposes to
                                 ensure we did everything properly.
                             </p>
-                            <table border="1" cellpadding="5" cellspacing="0">
-                                <tr>
-                                    <td>access_token</td>
-                                    <td>{{ tokenResult.access_token }}</td>
-                                </tr>
-                                <tr>
-                                    <td>expires_in</td>
-                                    <td>{{ tokenResult.expires_in }}</td>
-                                </tr>
-                                <tr>
-                                    <td>token_type</td>
-                                    <td>{{ tokenResult.token_type }}</td>
-                                </tr>
-                            </table>
+
+
+                            <label for="">access_token</label><br>
+                            <span>{{ tokenResult.access_token }}</span>
+                            <br>
+
+                            <label for="">expires_in</label><br>
+                            <span>{{ tokenResult.expires_in }}</span>
+                            <br>
+
+                            <label for="">token_type</label><br>
+                            <span>{{ tokenResult.token_type }}</span>
+                            <br>
+                            <br>
 
                             <hr />
                             <h3>Step A7 - fetch userId from /api/getUserId</h3>

@@ -1,6 +1,7 @@
 // get the node modules.
 var express = Npm.require('express'),
   bodyParser = Npm.require('body-parser'),
+  //bearerToken = Npm.require('express-bearer-token')
   oauthserver = Npm.require('oauth2-server');
 
 
@@ -37,6 +38,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.json());
+//app.use(bearerToken());
+
 app.all('/oauth/token', oAuth2Server.oauthserver.grant());
 
 WebApp.rawConnectHandlers.use(app);

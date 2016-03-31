@@ -10,6 +10,7 @@ Router.route('/', {
 
 Router.onBeforeAction(function () {
   if (!Meteor.loggingIn() && !Meteor.user()) {
+    console.info('Not logged in.  Rerouting to sign-in page.');
     this.redirect('/entrySignIn');
   } else {
     this.next();
@@ -40,7 +41,9 @@ Router.onBeforeAction(function () {
     // TODO: move these exclusions into clinical:entry
     'entrySignUp',
     'entrySignIn',
-    'forgotPassword'
+    'forgotPassword',
+
+    'conformanceRoute'
   ]
 });
 

@@ -10,10 +10,8 @@
  * It is expected whenever a /api url is called, a "access_token" is present in the
  * query or the body.
  */
-JsonRoutes.Middleware.use(
-    '/api/*',
-    oAuth2Server.oauthserver.authorise()   // OAUTH FLOW - A7.1
-);
+JsonRoutes.Middleware.use('/api/*', oAuth2Server.oauthserver.authorise() );  // OAUTH FLOW - A7.1
+
 
 /**
  * OAUTH FLOW - A7.2
@@ -41,18 +39,14 @@ JsonRoutes.add('get', '/api/getUserId', function(req, res, next) {
 
 
 
-// JsonRoutes.add("get", "/api/getUserData/:id", function (req, res, next) {
-//   console.log('GET /getUserData/' + req.params.id);
-//   //console.log('res', res);
-//
-//   var id = req.params.id;
-//   console.log('Patients.findOne(id)', Patients.findOne(id));
-//
-//   JsonRoutes.sendResult(res, {
-//     code: 200,
-//     data: Meteor.users.findOne(id)
-//   });
-// });
+JsonRoutes.add("get", "/metadata", function (req, res, next) {
+  console.log('GET /metadata');
+
+  JsonRoutes.sendResult(res, {
+    code: 200,
+    data: ConformanceStatement
+  });
+});
 
 
 JsonRoutes.add("get", "/api/getUserData/:id", function (req, res, next) {

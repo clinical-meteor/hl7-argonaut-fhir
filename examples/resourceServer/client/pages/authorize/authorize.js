@@ -74,6 +74,8 @@ Template.authorizePage.events({
     console.log('Authorize button clicked.');
     var urlParams = getUrlParams();
 
+    console.log('urlParams', urlParams);
+
     // create an authorization code for the provided client.
     oAuth2Server.callMethod.authCodeGrant(
       urlParams.client_id,

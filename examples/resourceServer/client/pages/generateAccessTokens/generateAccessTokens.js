@@ -26,8 +26,11 @@ Template.generateAccessTokens.events({
         console.log('grantResult', result);
 
         // give the UI something to display.
-        //Template.generateAccessTokens.grantResult.set(result);
-        window.location.replace(result.redirectToUri);
+        // if (process.env.DEBUG) {
+          Template.generateAccessTokens.grantResult.set(result);
+        // } else {
+        //   window.location.replace(result.redirectToUri);
+        // }
       }
     );
   }
