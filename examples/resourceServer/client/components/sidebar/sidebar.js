@@ -19,6 +19,11 @@
 
 
 Template.sidebar.events({
+  'click #statsLink': function(){
+    HTTP.get(Meteor.absoluteUrl() + "metadata", function (error, result){
+      Session.set("conformanceStatement", result.data);
+    });
+  },
   'click #themingLink': function (){
     Router.go('/theming');
   },
