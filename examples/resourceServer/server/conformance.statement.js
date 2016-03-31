@@ -1,6 +1,6 @@
 ConformanceStatement = {
   "resourceType": "Conformance",
-  "url": "http://fhir-server.meteorapp.com",
+  "url": "http://fhir-server.meteorapp.com/fhir",
   "name": "Sprint 2",
   "version": "0.2",
   "status": "draft",

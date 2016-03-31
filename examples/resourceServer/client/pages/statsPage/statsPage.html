@@ -1,0 +1,27 @@
+
+
+<template name="statsPage">
+  <div id="statsPage" class="padded page">
+    {{#with stats}}
+      <h2>Patient API Statistics</h2>
+
+      <h6>Read</h6>
+      <span class="counter">{{Patients.count.read}}</span>
+
+      <h6>VRead</h6>
+      <span class="counter">{{Patients.count.vread}}</span>
+
+      <h6>Search Type</h6>
+      <span class="counter">{{ getSearchTypeCount }}</span>
+
+      <h6>Delete</h6>
+      <span class="counter">{{Patients.count.delete}}</span>
+
+      <h6>Update</h6>
+      <span class="counter">{{Patients.count.update}}</span>
+
+      <h6>Create</h6>
+      <span class="counter">{{Patients.count.create}}</span>
+    {{/with}}
+  </div>
+</template>

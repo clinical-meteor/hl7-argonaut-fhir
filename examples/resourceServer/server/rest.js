@@ -49,8 +49,9 @@ JsonRoutes.add("get", "/metadata", function (req, res, next) {
 });
 
 
+
 JsonRoutes.add("get", "/api/getUserData/:id", function (req, res, next) {
-  console.log('GET /fhir/Patient/' + req.params.id);
+  console.log('GET /fhir/getUserData/' + req.params.id);
   //console.log('res', res);
 
   var accessTokenStr = (req.params && req.params.access_token) || (req.query && req.query.access_token);
