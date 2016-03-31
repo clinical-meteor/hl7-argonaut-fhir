@@ -15,7 +15,7 @@ Template.conformancePage.events({
 
 
 Template.conformancePage.onRendered( function (){
-  HTTP.get(Meteor.absoluteUrl() + "/metadata", function (error, result){
+  HTTP.get(Meteor.absoluteUrl() + "metadata", function (error, result){
     Session.set("conformanceStatement", result.data);
   });
 });
