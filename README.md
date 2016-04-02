@@ -1,8 +1,8 @@
 # hl7-argonaut-fhir
 HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces for HL7).    
-[http://hl7-argonaut-fhir.meteor.com](http://hl7-argonaut-fhir.meteor.com)  
 
-**UPDATE:  We now have an HL7 FHIR Server!**  
+[http://fhir-client.meteorapp.com](http://fhir-client.meteorapp.com)  
+[http://fhir-server.meteorapp.com](http://fhir-server.meteorapp.com)  
 
 
 ==============================
@@ -13,19 +13,25 @@ HL7 Argonaut FHIR project for Clinical Meteor (OAuth Server and REST interfaces 
 [Argonaut Project Spreadsheet](https://docs.google.com/spreadsheets/d/1mJRn7jHeED5SN-ZRhOh3V61wXmIKfaskQUF9nbUSkvY/edit)  
 [Example Patient Data](http://hl7-fhir.github.io/overview-dev.html)  
 
+
+==============================
+#### FHIR Client  
+
+The FHIR Client now passes [Sprint 2](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-2) requirements and can be used to query external EMR systems!
+
+
+==============================
+#### FHIR Server  
+
+Please note that as of April 2nd, the FHIR Server has been moved to a private repository, and will be available as a premium licensed product.  You can still use the FHIR Client to write apps that connect to EMR systems.  However, hosting your own EMR or Health Information Exchange using the Clinical Meteor FHIR Server will require an enterprise license.  Contributors to the project to date are eligible for a perpetual retroactive licenses to the FHIR server.  Please contact Abigail Watson at awatson1978@gmail.com for more details.  
+
+
 ==============================
 #### Connect with the Community
 
 [groups.google.com/argonaut-project](https://groups.google.com/forum/#!forum/argonaut-project)  
 [http://community.fhir.org]( http://community.fhir.org)  
 [http:///chat.fhir.org](http:///chat.fhir.org)
-
-==============================
-#### FHIR Server Documentation  
-
-We are now using the [prime-8-consulting/meteor-oauth2](https://github.com/prime-8-consulting/meteor-oauth2) server as our FHIR Authentication Server.  
-
-![FHIR Server Documentation](https://raw.githubusercontent.com/prime-8-consulting/meteor-oauth2/master/documentation/OAuthWebSequenceWithConfig.png)  
 
 
 ==============================
@@ -41,43 +47,7 @@ We now support the following resources for your server:
 [Questionnaire](https://github.com/clinical-meteor/hl7-resource-questionnaire)  
 [QuestionnaireResponse](https://github.com/clinical-meteor/hl7-resource-questionnaire-response)  
 
-
 We will be implementing future Resources from the [HL7 FHIR Resource Index](https://www.hl7.org/fhir/resourcelist.html) and be providing profession services around integration in the near future.  
-
-==============================
-#### FHIR Oauth2 Server
-
-##### Step 1  Get yourself an OAuth2 Server
-
-[prime-8-consulting/meteor-oauth2](https://github.com/prime-8-consulting/meteor-oauth2)  
-
-````
-cd examples/resourceServer
-meteor --port 3100
-
-cd examples/clientApplication
-meteor --port 3200
-````
-
-##### Step 2: Install a FHIR Resource
-
-[prime-8-consulting/meteor-oauth2](https://github.com/prime-8-consulting/meteor-oauth2)  
-
-````
-cd examples/resourceServer
-meteor add clinical:hl7-resource-diagnostic-order
-````
-
-##### Step 3:  Configure the Resource Server
-
-##### Step 4:  Authenticate
-
-##### Step 5:  Use Postman to access a Diagnostic Resource
-
-![Postman](https://raw.githubusercontent.com/clinical-meteor/hl7-argonaut-fhir/master/screenshots/PostmanAccessFhirDiagnosticResource.png)
-
-
-
 
 
 ==============================
@@ -87,6 +57,7 @@ meteor add clinical:hl7-resource-diagnostic-order
 [Implementation Sprint 2](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-2)  
 [Implementation Sprint 3](https://github.com/argonautproject/implementation-program/wiki/Implementation-Sprint-3)
 
+
 ==============================
 #### Implementation Progress Notes
 
@@ -95,6 +66,7 @@ meteor add clinical:hl7-resource-diagnostic-order
 [https://touchstone.aegis.net/touchstone/](https://touchstone.aegis.net/touchstone/)  
 [https://touchstone.aegis.net/touchstone/testdefinitions](https://touchstone.aegis.net/touchstone/testdefinitions)  
 [https://github.com/argonautproject/implementation-program/wiki](https://github.com/argonautproject/implementation-program/wiki)  
+
 
 ==============================
 #### Additional Node/Meteor Links
