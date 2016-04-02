@@ -24,7 +24,9 @@ The FHIR Client now passes [Sprint 2](https://github.com/argonautproject/impleme
 ==============================
 #### FHIR Server  
 
-Please note that as of April 2nd, the FHIR Server has been moved to a private repository, and will be available as a premium licensed product.  You can still use the FHIR Client to write apps that connect to EMR systems.  However, hosting your own EMR or Health Information Exchange using the Clinical Meteor FHIR Server will require an enterprise license.  Contributors to the project to date are eligible for perpetual retroactive licenses to the FHIR server.  Please contact Abigail Watson at awatson1978@gmail.com for more details.  
+Please note that as of April 2nd, the FHIR Server has been moved to a private repository, and will be available as a premium licensed product.  You can still use the FHIR Client to write apps that connect to EMR systems, and a community edition OAuth server is still in the project if you would like to implement your own OAuth server.  However, hosting your own EMR or Health Information Exchange using the Clinical Meteor FHIR Server will require an enterprise license.  Contributors to the project to date are eligible for perpetual retroactive licenses to the FHIR server.  
+
+Please contact Abigail Watson at awatson1978@gmail.com for more details.  
 
 ==============================
 #### FHIR Authorization Sequence
