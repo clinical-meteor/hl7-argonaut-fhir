@@ -27,6 +27,8 @@ Template.mainPage.onRendered(function () {
 var getUserIdResult = new ReactiveVar(null);
 var getUserData = new ReactiveVar(null);
 
+var getPatientData = new ReactiveVar(null);
+
 Template.mainPage.helpers({
   getUserAccessToken: function () {
     return getUserAccessToken();
@@ -43,15 +45,67 @@ Template.mainPage.helpers({
       return;
     }
 
-    return user.services.MeteorOAuth2Server.id;
+    return user.services.OAuth2Server.id;
   },
   getUserData: function () {
     console.log('getUserData', getUserData.get());
     return EJSON.stringify(getUserData.get(), {indent: 2});
+  },
+  getPatientData: function () {
+    console.log('getPatientData', getPatientData.get());
+    return EJSON.stringify(getPatientData.get(), {indent: 2});
   }
 });
 
 Template.mainPage.events({
+  'click #autoscanBtn': function (){
+    console.log('GET ' + $('#autoscanUrlInput').val());
+    Meteor.call("fetchMetadata", $('#autoscanUrlInput').val() + "/metadata", function (error, result){
+      if (error){
+        console.log("error", error);
+      }
+      if (result){
+         //console.log('metadata...', result.data);
+
+         if (result.data) {
+           result.data.rest.forEach(function (rest){
+             //console.log('rest', rest);
+             if (rest.mode === "server") {
+               if (rest && rest.security && rest.security.extension && rest.security.extension[0]) {
+                 var tokenUrl = "";
+                 var authorizeUrl = "";
+
+                 rest.security.extension[0].extension.forEach(function(data){
+                   //console.log('extension', data);
+                   if (data && data.url === "token") {
+                     console.log('token', data.valueUri);
+                     tokenUrl = data.valueUri;
+                   }
+                   if (data && data.url === "authorize") {
+                     console.log('authorize', data.valueUri);
+                     authorizeUrl = data.valueUri;
+                   }
+                 });
+
+                 ServiceConfiguration.configurations.insert({
+                   service: 'OAuth2Server',
+                   clientId: $('#autoscanClientNameInput').val(),
+                   scope: ['user/*.read'], // whatever scope the resource owner supports. By default, ['email'] will be used.
+                   //scope: [], // whatever scope the resource owner supports. By default, ['email'] will be used.
+                   secret: $('#autoscanSecretInput').val(),
+                   baseUrl: $('#autoscanUrlInput').val(),
+                   loginUrl: authorizeUrl,
+                   loginStyle: "popup"
+                 });
+
+               }
+             }
+           });
+         }
+      }
+    });
+  },
+
   /**
    * Wipe out all the configured services.
    */
@@ -78,8 +132,51 @@ Template.mainPage.events({
             getUserData.set(userData.data);
           });
         });
-      } // if
-    } // function
+      }
+    },
+
+
+  'click button.getPatientData': function () {
+    console.log('click button.getPatientData');
+
+      if (getUserAccessToken()) {
+        var parameters = {
+          params: {
+            access_token: getUserAccessToken()
+          }
+        };
+        if ($('#patientNameInput').val().length > 0) {
+          parameters.params.name = $('#patientNameInput').val();
+        }
+        if ($('#patientGivenInput').val().length > 0) {
+          parameters.params.given = $('#patientGivenInput').val();
+        }
+        if ($('#patientFamilyInput').val().length > 0) {
+          parameters.params.family = $('#patientFamilyInput').val();
+        }
+        if ($('#patientGenderInput').val().length > 0) {
+          parameters.params.gender = $('#patientGenderInput').val();
+        }
+        if ($('#patientIdentifierInput').val().length > 0) {
+          parameters.params.identifier = $('#patientIdentifierInput').val();
+        }
+        if ($('#patientBirthdateInput').val().length > 0) {
+          parameters.params.birthdate = $('#patientBirthdateInput').val();
+        }
+
+        console.log('parameters', parameters);
+
+        HTTP.call('get', 'http://localhost:3100/fhir/Patient', parameters, function(error, result){
+          if (result) {
+            console.log('getPatientData', result);
+            getPatientData.set(result.data);
+          }
+          if (error) {
+            console.error(error);
+          }
+        });
+      }
+    }
 });
 
 /**
@@ -88,7 +185,7 @@ Template.mainPage.events({
  * @returns {*}
  */
 function isOAuth2User(user) {
-  return user && user.services && user.services.MeteorOAuth2Server;
+  return user && user.services && user.services.OAuth2Server;
 }
 
 /**
@@ -102,7 +199,7 @@ function getUserAccessToken() {
     return;
   }
 
-  return user.services.MeteorOAuth2Server.accessToken;
+  return user.services.OAuth2Server.accessToken;
 }
 
 function prePopulateValues (e, id, value) {

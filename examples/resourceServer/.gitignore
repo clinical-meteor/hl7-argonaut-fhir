@@ -1,14 +1,1 @@
 .idea
-.env
-.gagarin
-.meteor/local
-
-screenshots
-logs
-reports
-
-screenshots/*
-logs/*
-reports/*
-
-settings.json

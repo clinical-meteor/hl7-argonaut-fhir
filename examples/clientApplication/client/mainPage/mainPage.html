@@ -14,7 +14,7 @@
             </p>
 
             <h2>Step A6</h2>
-            <label for="">AccessToken</label><br>
+            <label for="">Bearer Token</label><br>
             <p>{{ getUserAccessToken }}</p>
 
             <button class="testLocalTokens oauth-button">Test Local Tokens</button>
@@ -48,12 +48,53 @@
 
     <hr />
     <h2>Utilities</h2>
-    <div class="section">
+    <div class="utilities section">
+        <h4>Reset Configuration</h4>
         <p>
             For the sake of convenience while you experiment, you can reset configuration for the ClientApplication.
             This will make the login button you see above goto it's unconfigured state.
         </p>
         <button id="resetServiceConfiguration" class="oauth-button">Reset service configuration</button>
+
+        <br><br>
+        <h4>Autoscan FHIR Server</h4>
+        <p>
+          The following button will scan a FHIR Server and autodetect and configure the OAuth connection, based on the FHIR conformance statement located at <code>/metadata</code>
+        </p>
+        <input id="autoscanClientNameInput" type="text" name="autoscanClientName" placeholder="clientApplication"><br><br>
+        <input id="autoscanSecretInput" type="text" name="autoscanSecret" placeholder="slXlHvA-pGl6FbcCO8VuaKZnXemVc9fw1A0BFUjdrFc"><br><br>
+        <input id="autoscanUrlInput" type="text" name="autoscanUrl" placeholder="http://www.somesite.com"><br><br>
+        <button id="autoscanBtn" class="oauth-button">Autoscan</button>
+
+        <br><br>
+        <h4>Search Patients</h4>
+        <p>
+          The following will search the FHIR server using the REST protocol with an OAuth access token.
+        </p>
+        <label for="patientNameInput">Name</label>
+        <input id="patientNameInput" type="text" name="patientName" placeholder="Jane Doe"><br><br>
+
+        <label for="patientGivenInput">Given</label>
+        <input id="patientGivenInput" type="text" name="patienGiven" placeholder="Jane"><br><br>
+
+        <label for="patientFamilyInput">Family</label>
+        <input id="patientFamilyInput" type="text" name="patientFamily" placeholder="Doe"><br><br>
+
+        <label for="patientGenderInput">Gender</label>
+        <input id="patientGenderInput" type="text" name="patientGender" placeholder="Female"><br><br>
+
+        <label for="patientIdentifierInput">Identifier</label>
+        <input id="patientIdentifierInput" type="text" name="patientIdentifier" placeholder="12345"><br><br>
+
+        <label for="patientBirthdateInput">Birthdate</label>
+        <input id="patientBirthdateInput" type="text" name="patientBirthDate" placeholder="1960-02-01"><br><br>
+
+        <button id="searchPatientsButton" class="getPatientData oauth-button">Search</button>
+
+        <br><br>
+        <textarea class="jsonData">
+          {{getPatientData}}
+        </textarea>
     </div>
   </div>
 </template>

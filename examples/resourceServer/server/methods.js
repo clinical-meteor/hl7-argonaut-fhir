@@ -18,34 +18,12 @@ Meteor.methods({
         );
     },
 
-
-    'changeSecret': function (client, newSecret){
-        console.log('changeSecret', client);
-        oAuth2Server.collections.client.upsert(
-            {
-                clientId: client.clientId
-            },
-            {
-                $set: {
-                  'clientSecret': newSecret
-                }
-            }
-        );
-    },
-
     /**
      * Exists purely for testing purposes.
      * @returns {any}
      */
     'clientCount': function() {
-      var user = Meteor.users.findOne({_id: this.userId});
-      if (user.username === "sysadmin") {
         return oAuth2Server.collections.client.find({}).count();
-      } else {
-        return oAuth2Server.collections.client.find({
-          'owner.reference': this.userId
-        }).count();
-      }
     },
 
     /**
@@ -53,16 +31,5 @@ Meteor.methods({
      */
     'deleteAllClients': function() {
         oAuth2Server.collections.client.remove({});
-    },
-
-    /**
-     * Allows user to delete their account
-     */
-    'deleteClient': function(accountId) {
-        oAuth2Server.collections.client.remove({_id: accountId});
-    },
-
-    'getNewClientId': function(){
-      return (faker.company.bsAdjective() + "-" + faker.company.bsNoun()).trim();
     }
 });

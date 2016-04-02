@@ -4,9 +4,9 @@ Meteor.methods({
      */
     resetServiceConfiguration: function() {
       console.log('resetServiceConfiguration()');
-        ServiceConfiguration.configurations.remove({
-            service: MeteorOAuth2.serviceName // using the constant provided by the package, easy for refactoring.
-        });
+      ServiceConfiguration.configurations.remove({
+        service: OAuth2.serviceName // using the constant provided by the package, easy for refactoring.
+      });
     },
 
     /**
@@ -17,44 +17,44 @@ Meteor.methods({
      * doing it here to demonstrate each step of the oauth2 process.
      */
     getUserId: function() {
-        var user = Meteor.user();
-        var serviceConfig = ServiceConfiguration.configurations.findOne({
-            service: MeteorOAuth2.serviceName
-        });
+      var user = Meteor.user();
+      var serviceConfig = ServiceConfiguration.configurations.findOne({
+        service: OAuth2.serviceName
+      });
 
 
-        return HTTP.get(
-            serviceConfig.baseUrl + '/api/getUserId',
-            {
-                params: {
-                    access_token: user.services.MeteorOAuth2Server.accessToken
-                }
-            }
-        );
+      return HTTP.get(
+        serviceConfig.baseUrl + '/api/getUserId',
+        {
+          params: {
+            access_token: user.services.OAuth2Server.accessToken
+          }
+        }
+      );
     },
 
-        /**
-         * AUTH FLOW - Step A8.
-         * We have an access token. Get the user from the REST service.
-         * This will perform a server-to-server request for the identification of the user. This method
-         * is not one you will need to implement as the oauth2 client package does this for you. We are
-         * doing it here to demonstrate each step of the oauth2 process.
-         */
-        getUserData: function(remoteUserId) {
+    /**
+     * AUTH FLOW - Step A8.
+     * We have an access token. Get the user from the REST service.
+     * This will perform a server-to-server request for the identification of the user. This method
+     * is not one you will need to implement as the oauth2 client package does this for you. We are
+     * doing it here to demonstrate each step of the oauth2 process.
+     */
+    getUserData: function(remoteUserId) {
 
-            var user = Meteor.user();
-            var serviceConfig = ServiceConfiguration.configurations.findOne({
-                service: MeteorOAuth2.serviceName
-            });
+      var user = Meteor.user();
+      var serviceConfig = ServiceConfiguration.configurations.findOne({
+          service: OAuth2.serviceName
+      });
 
-            console.log('getting /api/gtUserData/' + remoteUserId);
-            return HTTP.get(
-                serviceConfig.baseUrl + '/api/getUserData/' + remoteUserId,
-                {
-                    params: {
-                        access_token: user.services.MeteorOAuth2Server.accessToken
-                    }
-                }
-            );
-        },
+      console.log('getting /api/gtUserData/' + remoteUserId);
+      return HTTP.get(
+        serviceConfig.baseUrl + '/api/getUserData/' + remoteUserId,
+        {
+          params: {
+            access_token: user.services.OAuth2Server.accessToken
+          }
+        }
+      );
+    }
 });

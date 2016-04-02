@@ -1,10 +1,10 @@
 var OAuth = Package.oauth.OAuth;
 var Random = Package.random.Random;
 
-OAuth.registerService(MeteorOAuth2.serviceName, 2, null, function(query) {
+OAuth.registerService(OAuth2.serviceName, 2, null, function(query) {
     console.log('query', query);
     var config = ServiceConfiguration.configurations.findOne({
-        service: MeteorOAuth2.serviceName
+        service: OAuth2.serviceName
     });
 
     if (!config) {
@@ -49,18 +49,22 @@ var isJSON = function(str) {
     }
 };
 
-var getTokenResponse = function(query, config) {
+var getTokenResponse = function(query, config, autoscannedUrl) {
     var responseContent;
+    var tokenUrl = '/oauth/token';
+    if (autoscannedUrl) {
+      tokenUrl = autoscannedUrl;
+    }
     try {
         responseContent = HTTP.post(
-            config.baseUrl + '/oauth/token',
+            config.baseUrl + tokenUrl,
             {
                 params: {
                     grant_type: 'authorization_code',
                     code: query.code,
                     client_id: config.clientId,
                     client_secret: OAuth.openSecret(config.secret),
-                    redirect_uri: OAuth._redirectUri(MeteorOAuth2.serviceName, config)
+                    redirect_uri: OAuth._redirectUri(OAuth2.serviceName, config)
                 }
             }
         ).content;
@@ -104,6 +108,6 @@ var getIdentity = function(accessToken, config) {
     }
 };
 
-MeteorOAuth2.retrieveCredential = function(credentialToken, credentialSecret) {
+OAuth2.retrieveCredential = function(credentialToken, credentialSecret) {
     return OAuth.retrieveCredential(credentialToken, credentialSecret);
 };
