@@ -80,5 +80,5 @@ We will be implementing future Resources from the [HL7 FHIR Resource Index](http
 
 [Node On FHIR](https://github.com/medcafe/NodeOnFHIR)  
 [Possible API inspired by mqtt-collection](https://atmospherejs.com/perak/mqtt-collection)  
-[Express Bearer Token](https://www.npmjs.com/package/express-bearer-token)
+[Express Bearer Token](https://www.npmjs.com/package/express-bearer-token)  
 [FHIR Profile Generator](http://clinfhir.com/)
