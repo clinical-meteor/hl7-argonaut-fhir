@@ -46,13 +46,31 @@ Please contact Abigail Watson at awatson1978@gmail.com for more details.
 
 We now support the following resources for your server:
 
+[Appointment](https://github.com/clinical-meteor/hl7-resource-appointment)  
 [ClinicalImpression](https://github.com/clinical-meteor/hl7-resource-clinical-impression)  
+[Condition](https://github.com/clinical-meteor/hl7-resource-condition)  
+[Datatypes](https://github.com/clinical-meteor/hl7-resource-datatypes)  
+[Device](https://github.com/clinical-meteor/hl7-resource-device)  
 [DiagnosticOrder](https://github.com/clinical-meteor/hl7-resource-diagnostic-order)  
+[Encounter](https://github.com/clinical-meteor/hl7-resource-encounter)  
+[FamilyMemberHistory](https://github.com/clinical-meteor/hl7-resource-family-member-history)  
+[HealthcareService](https://github.com/clinical-meteor/hl7-resource-healthcare-service)  
+[ImagingStudy](https://github.com/clinical-meteor/hl7-resource-imaging-study)  
+[Location](https://github.com/clinical-meteor/hl7-resource-location)  
+[Medication](https://github.com/clinical-meteor/hl7-resource-medication)  
 [MedicationOrder](https://github.com/clinical-meteor/hl7-resource-medication-order)    
+[Observation](https://github.com/clinical-meteor/hl7-resource-observation)  
+[Order](https://github.com/clinical-meteor/hl7-resource-order)  
+[Organization](https://github.com/clinical-meteor/hl7-resource-organization)  
 [Patient](https://github.com/clinical-meteor/hl7-resource-patient)  
-[Specimen](https://github.com/clinical-meteor/hl7-resource-specimen)  
+[Person](https://github.com/clinical-meteor/hl7-resource-person)  
+[Procedure](https://github.com/clinical-meteor/hl7-resource-procedure)  
 [Questionnaire](https://github.com/clinical-meteor/hl7-resource-questionnaire)  
 [QuestionnaireResponse](https://github.com/clinical-meteor/hl7-resource-questionnaire-response)  
+[RelatedPerson](https://github.com/clinical-meteor/hl7-resource-related-person)  
+[RiskAssessment](https://github.com/clinical-meteor/hl7-resource-risk-assessment)  
+[Sequence](https://github.com/clinical-meteor/hl7-resource-sequence)  
+[Specimen](https://github.com/clinical-meteor/hl7-resource-specimen)  
 
 We will be implementing future Resources from the [HL7 FHIR Resource Index](https://www.hl7.org/fhir/resourcelist.html) and be providing profession services around integration in the near future.  
 
